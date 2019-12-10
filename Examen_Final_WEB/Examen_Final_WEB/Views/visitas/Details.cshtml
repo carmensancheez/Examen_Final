@@ -1,0 +1,66 @@
+﻿@model Examen_Final_WEB.Models.visita
+
+@{
+    ViewBag.Title = "Detalles";
+}
+
+<h2>Detalles</h2>
+
+<div>
+
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.motivoVisita)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.motivoVisita)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.fechaVisita)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.fechaVisita)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.horaEntrada)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.horaEntrada)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.horaSalida)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.horaSalida)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.nombreCompleto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nombreCompleto)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.contacto.nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.contacto.nombre)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Editar", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Ir Atrás", "Index")
+</p>
