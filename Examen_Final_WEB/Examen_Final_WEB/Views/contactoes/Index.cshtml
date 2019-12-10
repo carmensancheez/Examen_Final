@@ -7,7 +7,7 @@
 <h2>Contactos</h2>
 
 <p>
-    @Html.ActionLink("Create Nuevo Contacto", "Create")
+    @Html.ActionLink("Create Nuevo Contacto", "Create", null,  new { @class = "waves-effect waves-light btn-small" })
 </p>
 <table class="table">
     <tr>
@@ -41,9 +41,9 @@
             @Html.DisplayFor(modelItem => item.fechaCreacion)
         </td>
         <td>
-            @Html.ActionLink("Editar", "Edit", new { id=item.Id }) |
-            @Html.ActionLink("Detalles", "Details", new { id=item.Id }) |
-            @Html.ActionLink("Eliminar", "Delete", new { id=item.Id })
+            @Html.ActionLink("Editar", "Edit", new { id=item.Id }, new { @class = "waves-effect waves-light btn-small" }) |
+            @Html.ActionLink("Detalles", "Details", new { id=item.Id }, new { @class = "waves-effect waves-light btn-small" }) |
+            @Html.ActionLink("Eliminar", "Delete", new { id=item.Id },  new { @class = "waves-effect waves-light btn-small" })
         </td>
     </tr>
 }

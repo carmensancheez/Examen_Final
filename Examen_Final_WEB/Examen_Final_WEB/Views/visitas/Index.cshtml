@@ -7,9 +7,9 @@
 <h2>Visitas</h2>
 
 <p>
-    @Html.ActionLink("Crear Nueva Visita", "Create")
+    @Html.ActionLink("Crear Nueva Visita", "Create", null,  new { @class = "waves-effect waves-light btn-small" })
 </p>
-<table class="table">
+<table class="striped">
     <tr>
         <th>
             @Html.DisplayName("Motivo Visita")
@@ -24,10 +24,10 @@
             @Html.DisplayName("Hora de Salida")
         </th>
         <th>
-            @Html.DisplayName("nombre Completo")
+            @Html.DisplayName("Nombre Completo")
         </th>
         <th>
-            @Html.DisplayName("Nombre Contacto")
+            @Html.DisplayName(" Contacto")
         </th>
         <th></th>
     </tr>
@@ -53,9 +53,9 @@
             @Html.DisplayFor(modelItem => item.contacto.nombre)
         </td>
         <td>
-            @Html.ActionLink("Editar", "Edit", new { id=item.Id }) |
-            @Html.ActionLink("Detalles", "Details", new { id=item.Id }) |
-            @Html.ActionLink("Eliminar", "Delete", new { id=item.Id })
+            @Html.ActionLink("Editar", "Edit", new { id=item.Id }, new { @class = "waves-effect waves-light btn-small" }) |
+            @Html.ActionLink("Detalles", "Details", new { id=item.Id },  new { @class = "waves-effect waves-light btn-small" }) |
+            @Html.ActionLink("Eliminar", "Delete", new { id=item.Id },  new { @class = "waves-effect waves-light btn-small" })
         </td>
     </tr>
 }

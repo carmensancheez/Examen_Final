@@ -59,7 +59,7 @@
         <div class="form-group">
             @Html.LabelFor(model => model.contactoRecibio, "contactoRecibio", htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.DropDownList("contactoRecibio", null, htmlAttributes: new { @class = "form-control" })
+                @Html.DropDownList("contactoRecibio", null, htmlAttributes: new { @class = "btn-large btn dropdown-trigger deep-orange accent-1" })
                 @Html.ValidationMessageFor(model => model.contactoRecibio, "", new { @class = "text-danger" })
             </div>
         </div>
@@ -73,7 +73,7 @@
 }
 
 <div>
-    @Html.ActionLink("Ir Atrás", "Index")
+    @Html.ActionLink("Ir Atrás", "Index", null,  new { @class = "waves-effect waves-light btn-small" })
 </div>
 
 @section Scripts {

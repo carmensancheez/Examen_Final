@@ -4,7 +4,7 @@
     ViewBag.Title = "Delete";
 }
 
-<h2>Eliminar Vista</h2>
+<h2>Eliminar Visita</h2>
 
 <h3>Estas seguro que deseas eliminarla?</h3>
 <div>
@@ -66,7 +66,7 @@
 
         <div class="form-actions no-color">
             <input type="submit" value="Eliminar" class="btn btn-default" /> |
-            @Html.ActionLink("Ir Atrás", "Index")
+            @Html.ActionLink("Ir Atrás", "Index",  null, new { @class = "waves-effect waves-light btn-small" })
         </div>
     }
 </div>
